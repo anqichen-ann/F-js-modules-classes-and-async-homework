@@ -1,6 +1,6 @@
 import getUrl from './utils';
-import * as info from './constant'
+import {ADDRESS, PORT, PATH, REGION} from './constant'
 
-export const url = getUrl.myURL(info.ADDRESS,info.PORT,info.PATH);
+export const url = getUrl(ADDRESS,PORT,PATH);
 
-export const region = info.REGION;
+export const region = REGION;
